@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,8 @@
   <title>AluraGeek</title>
 </head>
 
-<body class="">
+<body>
+
   <header class="flex w-full h-full mt-8 px-36">
     <div class="flex items-center ">
       <a class="pr-8" href="/src/index.html"><svg width="176" height="51" viewBox="0 0 176 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,21 +38,33 @@
     </div>
   </header>
 
-  <section class=" text-center bg-zinc-100 p-24 mt-8 ">
+  <section class="flex justify-center bg-zinc-100 p-24 mt-8 ">
 
-    <div>
-      <div>
-        <h1 class=" font-bold text-gray-600 mb-6">Iniciar Sessão</h1>
-      </div>
-      <input class="focus:outline-none py-4 pl-3 px-72 rounded mb-6 border-b-2 border-gray-200" type="email" placeholder="Escreva seu email">
-    </div>
+    <div class="">
+      <h1 class="font-bold text-gray-600 text-2xl">Adicionar novo produto</h1>
+      <label class="flex flex-col relative  " for="">
+        <span class=" text-gray-400 absolute pt-5  px-3  text-xs">URL da imagem</span>
+        <input class="focus:outline-none pt-5 py-4  w-full rounded mt-4 pl-3  border-b-2 border-gray-200 " type="text" name="" id="">
+      </label>
 
-    <div>
-      <input class="focus:outline-none py-4 pl-3 px-72 rounded border-b-2 border-gray-200" type="password" placeholder="Escreva sua senha">
-    </div>
+      <label class="flex flex-col relative  " for="">
+        <span class=" text-gray-400 absolute pt-5  px-3  text-xs">Categoria</span>
+        <input class="focus:outline-none pt-5 py-4  w-full rounded mt-4 pl-3 border-b-2 border-gray-200 " type="text" name="" id="">
+      </label>
 
-    <div>
-      <button class=" text-white  py-3 px-20 bg-blue-500 mt-6 border-b-2 border-gray-200">Entrar</button>
+      <label class="flex flex-col relative  " for="">
+        <span class=" text-gray-400 absolute pt-5  px-3  text-xs">Nome do produto</span>
+        <input class="focus:outline-none pt-5 py-4  w-full rounded mt-4 pl-3 border-b-2 border-gray-200 " type="text" name="" id="">
+      </label>
+
+      <label class="flex flex-col relative  " for="">
+        <span class=" text-gray-400 absolute pt-5  px-3  text-xs">Preço do produto</span>
+        <input class="focus:outline-none pt-5 py-4  w-full rounded mt-4 pl-3 mb-4 border-b-2 border-gray-200 " type="text" name="" id="">
+        <textarea class=" focus:outline-none py-4 pl-3 rounded px-64 mb-2 border-b-2 border-gray-200" placeholder="Descrição do produto"></textarea>
+        <button class="m-auto px-40 text-white  py-3  bg-blue-500">Adicionar produto</button>
+      </label>
+
+
     </div>
 
   </section>
@@ -99,6 +113,7 @@
 
 
   </footer>
+
 </body>
 
 </html>
